@@ -1,0 +1,1129 @@
+body {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+input, select, textarea, button {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",STHeiti;
+}
+li{
+	list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+*, *:active, *:focus {
+    outline: 0 none;
+}
+
+ 
+
+.userinfo dd.myaddress .address {
+    padding: 0;
+}
+
+.userinfo dd.myaddress .address li {
+    background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    box-shadow: none;
+    margin: 0;
+    width: 448px;
+}
+.userinfo .btn-sub a.btn2 {
+    background-color: #eee;
+    color: #999;
+}
+.userinfo .btn-sub a.btn2:hover {
+    background-color: #ff8a00;
+    color: #fff;
+}
+.userinfo .btn-sub a.btn1 {
+    background-color: #ffa800;
+    margin-left: 20px;
+}
+.userinfo .btn-sub a.btn1:hover {
+    background-color: #ff8a00;
+}
+.userinfo .btn-sub a {
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 92px;
+}
+.userinfo dd textarea:focus {
+    border: 1px solid #ffa800;
+    box-shadow: 0 0 5px #ffa200;
+    transition: box-shadow 0.25s linear 0s;
+   }
+.userinfo .set-first .radio {
+    margin-top: 0;
+}
+
+.address {
+    padding: 10px 0 40px;
+}
+
+.address li.title {
+    border: medium none;
+    box-shadow: none;
+    color: #999;
+    font-size: 14px;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 0 6px;
+}
+.address li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px #ccc;
+    margin-bottom: 18px;
+    padding: 10px 20px;
+    position: relative;
+    width: 630px;
+}
+
+.address .dt {
+    color: #999;
+    display: table-cell;
+    float: left;
+    font-size: 14px;
+    line-height: 2em;
+    text-align: right;
+    width: 72px;
+}
+
+.address .dd {
+    color: #666;
+    display: table-cell;
+    float: left;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.address .i-first {
+    border: 1px solid #ffa800;
+    border-radius: 3px;
+    color: #ffa800;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 10px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+.address .btns {
+    bottom: 16px;
+    color: #ffa800;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+}
+
+.address .btns a {
+    color: #ffa800;
+    font-size: 12px;
+}
+.content i.radio.on {
+    background-position: -54px 0;
+}
+.content i.radio {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_btns3.png) no-repeat scroll -36px 0;
+    display: inline-block;
+    float: left;
+    height: 19px;
+    width: 18px;
+}
+
+.userinfo .set-first {
+    font-size: 12px;
+    padding: 10px 0 0;
+}
+.wrapper {
+    color: #666;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 980px;
+}
+
+.aside {
+    float: left;
+    width: 260px;
+}
+.aside a {
+    border-radius: 3px;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    line-height: 46px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 260px;
+}
+.aside a.on {
+    background-color: #ffa800;
+    color: #fff;
+}
+.aside i {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_left4.png) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 22px;
+    margin: 0 10px 0 24px;
+    vertical-align: middle;
+    width: 22px;
+}
+
+.aside .i1 {
+    background-position: 0 0;
+}
+.aside a.on .i1 {
+    background-position: -22px 0;
+}
+
+.aside .i2 {
+    background-position: 0 -22px;
+}
+
+.aside a.on .i2 {
+    background-position: -22px -22px;
+}
+
+.aside .i3 {
+    background-position: 0 -44px;
+}
+.aside a.on .i3 {
+    background-position: -22px -44px;
+}
+
+.aside .i4 {
+    background-position: 0px -66px;
+}
+
+.aside a.on .i4 {
+    background-position: -22px -66px;
+}
+.aside .i8 {
+    background-position: 0px -154px;
+}
+
+.aside a.on .i8 {
+    background-position: -22px -154px;
+}
+.aside .i9 {
+    background-position: 0px -176px;
+}
+
+.aside a.on .i9 {
+    background-position: -22px -176px;
+}
+
+.content {
+    background: #fff none repeat scroll 0 0;
+    float: right;
+    min-height: 480px;
+    padding: 20px 50px;
+    width: 590px;
+}
+
+.content .hd {
+    border-bottom: 1px solid #eee;
+    margin: 0 -18px 18px;
+    padding-bottom: 18px;
+}
+
+.content .hd strong {
+    color: #444;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.content .hd span {
+    color: #999;
+    font-size: 14px;
+    margin-left: 18px;
+}
+
+.content .hd .progress {
+    background-color: #bddf7d;
+    display: inline-block;
+    height: 16px;
+    margin-left: 8px;
+    position: relative;
+    vertical-align: middle;
+    width: 110px;
+}
+
+.content .hd .progress .num {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    right: 3px;
+}
+.content .hd .progress .on {
+    background-color: #add75c;
+    height: 16px;
+}
+.content dl {
+    clear: both;
+    padding-bottom: 15px;
+}
+
+.content dt {
+    color: #a1a1a1;
+    float: left;
+    font-size: 16px;
+    padding: 6px 10px 0 0;
+    text-align: right;
+    width: 85px;
+}
+.content dd {
+    float: right;
+    width: 490px;
+}
+
+
+.content dd label .cssradio {
+    float: left;
+    margin: 6px 6px 0 0;
+}
+.content dd input[type="text"] {
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    color: #999;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    outline: medium none;
+    padding: 6px 8px;
+    transition: box-shadow 0.25s linear 0s;
+    width: 208px;
+}
+.content dd input[type="text"]:focus {
+    border: 1px solid #ffa800;
+    box-shadow: 0 0 5px #ffa200;
+    transition: box-shadow 0.25s linear 0s;
+}
+.content dd label {
+    cursor: pointer;
+    float: left;
+    line-height: 32px;
+    padding-right: 20px;
+}
+.cssradio input[type="radio"] {
+    height: 16px;
+    left: 1px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 1px;
+    width: 16px;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.content dd label .cssradio {
+    float: left;
+    margin: 6px 6px 0 0;
+}
+.cssradio {
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    position: relative;
+    vertical-align: middle;
+    width: 18px;
+}
+
+.cssradio span::after {
+    background-color: #fff;
+    border-radius: 100%;
+    bottom: 2px;
+    content: "";
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    transform: scale(0.5);
+    transition: all 0.15s ease-out 0s;
+}
+
+.cssradio input:checked + span::after {
+    background-color: #ffa800;
+    opacity: 1;
+    transform: scale(1);
+}
+.cssradio span {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ffa800;
+    border-radius: 100%;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 16px;
+}
+
+.cssradio input:checked + span::after {
+    background-color: #ffa800;
+    opacity: 1;
+    transform: scale(1);
+}
+.content .input-group {
+    position: relative;
+}
+.userinfo dd textarea {
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    color: #999;
+    font-size: 14px;
+    height: 110px;
+    line-height: 1.6em;
+    outline: medium none;
+    padding: 6px 8px;
+    resize: none;
+    transition: box-shadow 0.25s linear 0s;
+    width: 472px;
+}
+
+.userinfo dd a {
+    color: #ffa800;
+}
+
+.userinfo .tips {
+    background-color: #f6f6f6;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.8em;
+    margin: 0 105px;
+    padding: 15px 20px;
+    width: 345px;
+}
+
+.userinfo .tips .title {
+    color: #999;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.userinfo .tips .title b {
+    color: #ffa800;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: text-top;
+}
+
+
+.userinfo .btn-sub {
+    float: right;
+    padding: 10px 0;
+    width: 490px;
+}
+
+.userinfo .btn-sub button {
+    background-color: #ffa800;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 112px;
+}
+
+
+.userlogo .avatar {
+    height: 120px;
+    padding: 30px 0 20px;
+    position: relative;
+    width: 120px;
+}
+.userlogo .avatar .progress {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 20px;
+    height: 120px;
+    left: 0;
+    position: absolute;
+    width: 120px;
+}
+
+.userlogo .avatar .progress .bar {
+    background-color: #95b44b;
+    bottom: 0;
+    display: block;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    width: 120px;
+}
+
+.userlogo .avatar .progress .num {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    right: 3px;
+}
+.userlogo .avatar .progress .on {
+    background-color: #add75c;
+    height: 16px;
+}
+
+.userlogo .btn-sub {
+    font-size: 12px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.userlogo .btn-sub .btn {
+    background-color: #ffa800;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 12px;
+    text-align: center;
+    vertical-align: middle;
+    width: 120px;
+}
+
+.userlogo .editor .plan, .userlogo .editor .plan img {
+    width: 330px;
+}
+.userlogo .editor .plan {
+    float: left;
+}
+
+.userlogo .editor .preview {
+    float: right;
+    width: 180px;
+}
+
+.userlogo .preview p {
+    font-size: 14px;
+    padding: 0 0 10px;
+}
+
+.userlogo .preview dl {
+    line-height: 1.6em;
+    padding: 0;
+}
+
+.userlogo .preview dl.large dt {
+    height: 120px;
+    width: 120px;
+}
+.userlogo .preview dt {
+    float: none;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.userlogo .preview dt img {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.userlogo .preview dd {
+    color: #666;
+    float: none;
+    font-size: 12px;
+    height: 30px;
+}
+
+
+.userlogo .preview dl {
+    line-height: 1.6em;
+    padding: 0;
+}
+
+.userlogo .preview dl.normal dt {
+    height: 48px;
+    width: 48px;
+}
+
+.userlogo .preview dl.small dt {
+    height: 16px;
+    width: 16px;
+}
+
+.userlogo .editor .btns {
+    padding: 20px 0;
+}
+.userlogo .editor .btns a.btn1 {
+    background-color: #ffa800;
+}
+
+.userlogo .editor .btns a.btn2 {
+    background-color: #eee;
+    color: #999;
+    margin-left: 20px;
+}
+.userlogo .editor .btns a {
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 92px;
+}
+
+.blinding {
+    position: relative;
+    width: 670px;
+}
+
+.blinding .weixin {
+    background-color: #fff;
+    box-shadow: 0 2px 6px #ccc;
+    color: #999;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 132px;
+}
+
+.blinding .weixin img {
+    border: 3px solid #ffa800;
+    vertical-align: middle;
+}
+
+.blinding .weixin .t1 {
+    font-size: 14px;
+    padding: 10px 0 15px;
+}
+
+.blinding .weixin .t2 {
+    font-size: 12px;
+    line-height: 1.6em;
+}
+
+.blinding .weixin .t3 {
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.blinding .title {
+    color: #999;
+    font-size: 14px;
+    padding: 10px 0 20px;
+}
+.blinding dl {
+    border-bottom: 1px dashed #d7d7d7;
+    padding: 25px 0 40px;
+    width: 470px;
+}
+
+.blinding dt {
+    float: left;
+    padding-top: 4px;
+    width: 57px;
+}
+
+.blinding dt i.weibo {
+    background-position: 0 0;
+}
+.blinding dt i {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_connect.png) no-repeat scroll 0 0;
+    border-radius: 4px;
+    display: block;
+    height: 37px;
+    width: 37px;
+}
+
+.blinding dd {
+    float: left;
+    width: 385px;
+}
+
+.blinding dd h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.blinding dd h3 span {
+    color: #444;
+    margin-left: 6px;
+}
+
+.blinding dd h3 strong {
+    font-size: 18px;
+    font-weight: normal;
+    margin-right: 6px;
+}
+
+.blinding dd .btns {
+    padding: 22px 0 0;
+}
+.blinding dd .btns a {
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 145px;
+}
+
+.blinding dt i.qzone {
+    background-position: 0 -37px;
+}
+
+.blinding dd .btns a.btn1 {
+    background-color: #ffa800;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix::after, .wrapper::after, .article::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+.userpass {
+    width: 560px;
+}
+.userpass dl {
+    clear: both;
+    padding-bottom: 15px;
+    width: 560px;
+}
+
+.userpass dt {
+    float: left;
+    font-size: 14px;
+    padding: 4px 10px 0 0;
+    text-align: right;
+    width: 75px;
+}
+
+.userpass dd {
+    color: #666;
+    float: left;
+    line-height: 1.8em;
+    width: 455px;
+}
+
+.userpass a {
+    color: #ffa800;
+    font-size: 14px;
+}
+
+.userpass #set-pw {
+    display: block;
+    padding-top: 15px;
+}
+.userpass .ways a.byphone {
+}
+.userpass .ways a:hover{
+	color: #ffa880;
+}
+.userpass .ways a.disable {
+    cursor: default;
+}
+
+.userpass .ways a.byphone.disable i {
+    background-position: 0 -54px;
+}
+.userpass .ways a.byphone i {
+    background-position: 0 0;
+}
+.userpass .ways i {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_pw.png) no-repeat scroll 0 0;
+    display: inline-block;
+    height: 54px;
+    margin: 20px 0 10px;
+    width: 54px;
+}
+
+.userpass .ways a.bymail {
+    margin-left: 45px;
+}
+
+.userpass .ways a.bymail i {
+    background-position: -54px 0;
+}
+.userpass dd i {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_btns3.png) no-repeat scroll -72px -1px;
+    display: inline-block;
+    height: 18px;
+    margin: 0 4px 0 15px;
+    vertical-align: middle;
+    width: 18px;
+}
+
+.setmail {
+    width: 670px;
+}
+
+.setmail .set-mobile {
+}
+
+.setmail dt {
+    width: 85px;
+}
+
+.setmail .set-mobile .btn-code {
+    background-color: #ffa800;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 10px;
+    text-align: center;
+    width: 148px;
+}
+
+.setmail .tips {
+    color: #999;
+    font-size: 12px;
+    padding: 0 0 25px 95px;
+}
+
+.setmail .btns {
+    padding: 10px 0 0 95px;
+}
+
+
+.setmail .btn-sub {
+    background-color: #ffa800;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 176px;
+}
+
+.setmail .btn-exit {
+    background-color: #eee;
+    border: medium none;
+    border-radius: 5px;
+    color: #999;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 10px;
+    text-align: center;
+    width: 110px;
+}
+
+.userurl {
+    padding: 20px 0;
+    width: 670px;
+}
+.userurl .gourl {
+    padding: 15px 0 0;
+}
+
+.userurl .gourl a {
+    color: #ffa800;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.userurl .btn-sub {
+    padding: 20px 0 0;
+}
+
+.userurl .btn-sub a.disable {
+    background-color: #eee;
+    color: #999;
+    cursor: text;
+}
+.userurl .btn-sub a {
+    background-color: #ffa800;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.userurl .btn-sub .tips {
+    background-color: #fff;
+    color: #ffa800;
+    display: inline;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    text-align: left;
+}
+
+.userurl .btn-sub .tips i {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_btns3.png) no-repeat scroll -145px 0;
+    display: inline-block;
+    height: 14px;
+    margin: 0 5px 0 10px;
+    vertical-align: middle;
+    width: 14px;
+}
+
+.blacklist {
+    width: 584px;
+}
+
+.blacklist .col-search {
+    margin-right: 10px;
+    width: 308px;
+}
+.blacklist dl {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    clear: none;
+    float: left;
+    height: 360px;
+    padding: 0;
+    width: 258px;
+}
+
+.blacklist dt {
+    float: none;
+    height: 30px;
+    margin: 9px 9px 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+}
+
+.blacklist .focus .inp-t {
+    background-color: #fff;
+    border-color: #ff9d00;
+}
+.blacklist .inp-t {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    color: #666;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 38px 0 12px;
+    width: 238px;
+}
+
+.blacklist .focus .inp-b {
+    background-position: -60px -20px;
+}
+.blacklist .inp-b {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_btns3.png) no-repeat scroll -40px -20px;
+    border: medium none;
+    cursor: pointer;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    width: 17px;
+}
+
+.blacklist dd {
+    float: none;
+    width: auto;
+}
+
+.blacklist .search-list {
+    height: 260px;
+    overflow: auto;
+    position: relative;
+}
+
+.blacklist .action {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.blacklist .btn {
+    background-color: #ff9d00;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 25px;
+}
+.blacklist .bd {
+    background-color: #efefef;
+    margin: 0 -18px;
+    padding: 20px;
+}
+
+.blacklist .col-list ul {
+    height: 310px;
+    overflow: auto;
+    position: relative;
+}
+
+.blacklist .search-list li {
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 48px 0 20px;
+    position: relative;
+}
+
+.blacklist li img {
+    float: left;
+    height: 16px;
+    margin: 12px 8px 0 0;
+    overflow: hidden;
+    width: 16px;
+}
+
+.blacklist li .name {
+    float: left;
+    margin-right: 10px;
+    max-width: 120px;
+    overflow: hidden;
+}
+
+.blacklist .gender {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_btns3.png) no-repeat scroll 0 -20px;
+    float: left;
+    height: 20px;
+    margin: 11px 9px 0 0;
+    width: 20px;
+}
+
+.blacklist .lv {
+    color: #999;
+    font-size: 12px;
+}
+
+.blacklist .search-list li {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.blacklist .col-list li {
+    border-bottom: 1px solid #efefef;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-right: 40px;
+    position: relative;
+}
+
+.blacklist li a {
+    color: #ff9d00;
+
+}
+.blacklist li img {
+    float: left;
+    height: 16px;
+    margin: 12px 8px 0 0;
+    overflow: hidden;
+    width: 16px;
+}
+
+.blacklist li .name {
+    float: left;
+    margin-right: 10px;
+    max-width: 120px;
+    overflow: hidden;
+}
+
+
+.blacklist .lv {
+    color: #999;
+    font-size: 12px;
+}
+
+.blacklist .btn-remove {
+    background: rgba(0, 0, 0, 0) url(img/settings/i_btns3.png) no-repeat scroll -80px -20px;
+    cursor: pointer;
+    height: 11px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    width: 11px;
+}
+
+
+.signup-forms .vcode-send {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #fff, #f2f2f2) repeat scroll 0 0;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    color: #333;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+    width: 120px;
+}
+.add-info .hd {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 5px 5px 0 0;
+    color: #666;
+    font-size: 18px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 26px;
+    text-align: left;
+}
+.add-info {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 370px;
+}
+
+.signup-forms .form-field input.vcode-input {
+    float: right;
+    width: 174px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/settings.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="aside">
+				<a href="settings.html"><i class="i1"></i>我的信息</a>
+				<a href="settings_avatar.html"><i class="i2"></i>我的头像</a>
+				<a href="settings_sns.html"><i class="i3"></i>绑定设置</a>
+				<a href="settings_security.html"><i class="i4"></i>账号安全</a>
+				<a href="settings_domain.html"><i class="i8"></i>我的窝设置</a>
+				<a  class="on" href="settings_blacklist.html"><i class="i9"></i>黑名单管理</a>
+			</div>
+			<div class="content">
+				<div class="hd">
+					<strong>黑名单管理</strong>
+					<span>
+                    资料完善度
+                    <div class="progress">
+                        <div class="num">60%</div>
+                        <div style="width:60%" class="on"></div>
+                    </div>
+                </span>
+				</div>
+
+				<div class="blacklist">
+					<div class="bd clearfix">
+						<dl class="col-search">
+							<dt class="s-bar focus">
+    				<input type="text" class="inp-t" id="name">
+    				<input type="button" class="inp-b" id="search">
+    			</dt>
+							<dd>
+								<ul class="search-list">
+									<li data-name="菲菲【S】" data-lv="26" data-logo="http://file28.mafengwo.net/M00/65/DB/wKgB6lPWKsmAUMLSAACmeguHOW801.head.w48.jpeg" data-id="429274">
+										<img width="16" height="16" src="css/img/settings/ic1.jpeg">
+										<span class="name">菲菲【S】</span>
+										<i class="gender male"></i>
+										<span class="lv">Lv.26</span>
+										<i class="i-selected"></i>
+									</li>
+									<li class="on" data-name="菲菲【S】" data-lv="26" data-logo="http://file28.mafengwo.net/M00/65/DB/wKgB6lPWKsmAUMLSAACmeguHOW801.head.w48.jpeg" data-id="429274">
+										<img width="16" height="16" src="css/img/settings/ic1.jpeg">
+										<span class="name">菲菲【S】</span>
+										<i class="gender male"></i>
+										<span class="lv">Lv.26</span>
+										<i class="i-selected"></i>
+									</li>
+								</ul>
+								<div class="action"><a href="javascript:void(0)" class="btn" id="add_blacklist">加入黑名单</a></div>
+							</dd>
+						</dl>
+						<dl class="col-list">
+							<dt>我的黑名单</dt>
+							<dd>
+								<ul id="blacklist">
+								<li>
+									<a href="http://www.mafengwo.cn/u/1005525.html">
+									<img width="16" height="16" src="css/img/settings/ic2.jpeg">
+									</a>
+									<a class="name" href="http://www.mafengwo.cn/u/1005525.html">Viki.S</a>
+									<span class="lv">Lv.19</span>
+									<span class="btn-remove" data-id="1005525"></span>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>

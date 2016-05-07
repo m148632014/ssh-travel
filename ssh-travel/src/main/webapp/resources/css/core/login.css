@@ -1,0 +1,182 @@
+body {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+    font-size: 12px;
+}
+a {
+    color: #ffa800;
+    text-decoration: none;
+}
+input, select, textarea, button {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",STHeiti;
+}
+body, p, div {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+*, *:active, *:focus {
+    outline: 0 none;
+}
+
+.login-popup-box {
+    background-color: #fff;
+    margin-left:-250px;
+    overflow: hidden;
+    padding: 20px;
+    width: 540px;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+}
+
+.login-popup-box .login-box {
+    float: left;
+    padding: 20px 34px 0 10px;
+    position: relative;
+    width: 255px;
+}
+
+.login-popup-box .login-box .errer-info {
+    background: rgba(0, 0, 0, 0) url(img/login/loginBox_btn.gif) no-repeat scroll -180px 0;
+    color: #f00;
+    font-weight: 700;
+    height: 40px;
+    left: 0;
+    padding: 9px 0 0 29px;
+    position: absolute;
+    top: 0;
+    width: 227px;
+}
+
+.login-popup-box .login-box h2 {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.login-popup-box .login-box p {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.login-popup-box .login-input {
+    height: 25px;
+    padding: 19px 0 0;
+}
+.login-popup-box .login-input input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #aaa #ddd #ddd #aaa;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #999;
+    height: 23px;
+    padding: 2px 0 0 5px;
+    width: 248px;
+}
+.hide {
+    display: none;
+}
+
+.login-popup-box .login-input.login-code img {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    float: right;
+    height: 25px;
+    width: 73px;
+}
+
+.login-popup-box .login-input.login-code input {
+    float: left;
+    width: 163px;
+}
+
+
+.login-popup-box .login-buttons {
+    padding-top: 25px;
+}
+
+.login-popup-box .login-buttons button {
+    background-color: #ffa800;
+    border: 0 none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 0 0 30px;
+    overflow: hidden;
+    padding: 0;
+    width: 62px;
+}
+
+.login-popup-box .login-buttons span {
+    float: left;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+/**/
+
+.login-popup-box .connect-box {
+    border-left: 1px solid #ddd;
+    float: left;
+    height: 221px;
+    padding: 20px 0 0 15px;
+    width: 215px;
+}
+
+.login-popup-box .connect-box h3 {
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    height: 28px;
+    padding: 15px 0 10px 35px;
+}
+
+.login-popup-box .connect-buttons {
+    padding: 0 0 0 20px;
+}
+.login-popup-box .connect-buttons a {
+    background-color: #ffc952;
+    border-bottom: 1px solid #eba452;
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto 10px;
+    text-align: left;
+    width: 135px;
+}
+.login-popup-box .connect-buttons a i {
+    background: rgba(0, 0, 0, 0) url(img/login/lc-icon.png) no-repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin: 6px 6px 0 9px;
+    width: 25px;
+}
+
+.login-popup-box .connect-buttons a.weibo i {
+    background-position: 0 -21px;
+}
+
+.login-popup-box .regist-link {
+    color: #333;
+    font-size: 14px;
+    height: 28px;
+    padding: 10px 0 0 35px;
+}
+
+.login-popup-box .connect-buttons a.qq i {
+    background-position: 0 0;
+}

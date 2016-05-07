@@ -1,0 +1,373 @@
+/*header------------*/
+.mfm-header *{
+	font-size:15px;
+}
+.dropdown-user *{
+	font-size:12px;
+}
+.mfm-header{
+	height: 68px;
+	background: #fff;
+	z-index: 90;
+	
+	position:relative;
+}
+.header-wrap{
+	height: 68px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.head-logo{
+	width: 136px;
+	height: 39px;
+	padding: 16px 0 13px;
+	float: left;
+}
+.head-logo .mfm-logo{
+	background: #fff url(img/header/header-sprites3.png) no-repeat 0 0;
+	height: 39px;
+	display: block;
+}
+.head-nav{
+	height: 68px;
+	padding: 0 10px 0 25px;
+	font-size: 16px;
+	color: #333;
+	float: left;
+	line-height: 68px;
+	display:inline;
+}
+.head-nav li a{
+	color: #333;
+	display: inline-block;
+	padding: 0 18px;
+}
+.head-nav li a:hover{
+	border-bottom: 3px solid #ff9d00;
+	color: #ff9d00;
+}
+
+.head-nav .head-nav-active a {
+    background-color: #ff9d00;
+    color: #fff;
+    text-decoration: none;
+}
+.head-nav .head-nav-active a:hover {
+    color: #fff;
+}
+.head-nav li{
+	float: left;
+}
+
+.login-info, .login-out {
+    width: auto;
+}
+.login-out {
+    color: #c9c9c9;
+    float: right;
+    height: 26px;
+    line-height: 26px;
+    padding: 21px 0;
+    text-align: right;
+}
+
+
+.login-out .weibo-login, .login-out .qq-login, .login-out .weixin-login {
+    background-image: url("img/header/header-sprites7.png");
+    background-position: 0 -50px !important;
+    display: inline-block;
+    height: 26px;
+    margin-right: 6px;
+    overflow: hidden;
+    vertical-align: -7px;
+    width: 26px;
+}
+.login-out a {
+    font-size: 14px;
+}
+a {
+    background-color: transparent;
+    color: #ff9d00;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login-out a:hover {
+    color: #ff8a00;
+    text-decoration: underline;
+}
+.login-out .weibo-login:hover {
+    background-position: 0 -80px !important;
+}
+.login-out .qq-login {
+    background-position: -30px -50px !important;
+}
+.login-out .qq-login:hover {
+    background-position: -30px -80px !important;
+}
+.login-out .weixin-login {
+    background-position: 0 -165px !important;
+}
+.login-out .weixin-login:hover {
+    background-position: -30px -165px !important;
+}
+
+.login-out .split {
+    background-color: #c9c9c9;
+    display: inline-block;
+    height: 14px;
+    margin: 0 10px;
+    overflow: hidden;
+    vertical-align: -2px;
+    width: 1px;
+}
+.login-info{
+	float:right;
+	display:none;	
+}
+.login-info a{
+	color:#666;
+	font-size: 14px;
+}
+.login-info a:hover{
+    color: #ff9d00;
+}
+.head-daka {
+    margin-right: 20px;
+    width: 60px;
+    float:right;
+    padding-top: 23px;
+}
+.head-daka a {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #fff;
+    background: #1493e3;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+}
+.head-msg {
+    display: inline;
+    float: right;
+    line-height: 68px;
+    margin-right: 15px;
+}
+.head-msg .icon-msg {
+    background-image: url(img/header/header-sprites3.png);
+    background-position: -59px -50px !important;
+    height: 18px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    width: 17px;
+}
+
+.head-msg .drop-trigger:hover .icon-msg, .head-msg .drop-trigger-active .icon-msg {
+    background-position: -60px -80px;
+}
+	 
+.drop-trigger {
+    cursor: pointer;
+    display: inline-block;
+    height: 68px;
+    padding-right: 13px;
+    padding-left: 22px;
+    position: relative;
+    vertical-align: top;
+}
+.drop-trigger .icon-caret-down {
+    position: absolute;
+    right: 0;
+    top: 32px;
+}
+.drop-trigger:hover .icon-caret-down{
+    border-top-color: #ff9d00;
+}
+.head-msg:hover .icon-msg, .head-msg .drop-trigger-active .icon-msg {
+    background-position: -59px -80px !important;
+}
+.icon-caret-down {
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    border-top: 4px solid #666;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+.icon-caret-up {
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    border-bottom: 4px solid #666;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+    
+.head-daka a:hover{
+	  color: #fff;
+}
+.head-user{
+	float: right;
+}
+
+.head-user .user-image {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    float: left;
+    height: 32px;
+    margin-top: 15px;
+    overflow: hidden;
+    width: 32px;
+}
+
+/**drop group*/
+.mfm-header .dropdown-group {
+    height: 0;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    z-index: 3;
+}
+
+.mfm-header .shadow {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #d6d6d6;
+    bottom: -2px;
+    height: 2px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.mfm-header .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 208px;
+    z-index: 10;
+}
+.mfm-header .dropdown-menu ul {
+    margin-bottom: 10px;
+}
+.mfm-header .dropdown-menu li {
+    color: #666;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    vertical-align: top;
+}
+.mfm-header .dropdown-menu li a {
+    color: #666;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    padding: 0 10px 0 20px;
+}
+.mfm-header .dropdown-menu li a:hover {
+    background-color: #eee;
+    color: #666;
+    text-decoration: none;
+}
+.mfm-header .dropdown-menu .num {
+    background-color: #ff9d00;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    position: absolute;
+    right: 30px;
+    top: 9px;
+}
+.mfm-header .dropdown-msg {
+    z-index: 2;
+}
+.mfm-header .close-newmsg {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    height: 10px;
+    line-height: 10px;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+}
+.mfm-header .close-newmsg:hover {
+    color: #ff9d00;
+}
+.mfm-header .user-info {
+    background-color: #ff9d00;
+    color: #fff;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin: -1px -1px 10px;
+    padding: 0 0 0 20px;
+}
+.mfm-header .user-info a {
+    color: #fff;
+}
+.mfm-header .user-info .level {
+    font-size: 16px;
+    margin-right: 25px;
+}
+.mfm-header .dropdown-user li a {
+    padding-left: 53px;
+}
+.mfm-header .dropdown-user [class|="icon"] {
+    background: rgba(0, 0, 0, 0) url(img/header/header-sprites3.png) no-repeat scroll -60px -50px;
+    height: 16px;
+    left: 23px;
+    position: absolute;
+    top: 10px;
+    width: 16px;
+}
+.mfm-header .dropdown-user .icon-wo {
+    background-position: -90px -50px !important;
+    height: 17px;
+}
+.mfm-header .dropdown-user .icon-writenotes {
+    background-position: -120px -50px !important;
+}
+.mfm-header .dropdown-user .icon-path {
+    background-position: -150px -50px !important;
+}
+.mfm-header .dropdown-user .icon-wenda {
+    background-position: -180px -50px !important;
+}
+.mfm-header .dropdown-user .icon-friend {
+    background-position: -90px -80px !important;
+}
+.mfm-header .dropdown-user .icon-collect {
+    background-position: -120px -80px !important;
+    height: 17px;
+}
+.mfm-header .dropdown-user .icon-order {
+    background-position: -150px -80px !important;
+}
+.mfm-header .dropdown-user .icon-coupon {
+    background-position: -180px -80px !important;
+}
+.mfm-header .dropdown-user .icon-settings {
+    background-position: -90px -110px !important;
+    height: 18px;
+    width: 18px;
+}
+.mfm-header .dropdown-user .icon-logout {
+    background-position: -120px -110px !important;
+}
+

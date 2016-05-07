@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/settings.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="aside">
+	            <a class="on" href="settings.html"><i class="i1"></i>我的信息</a>
+	            <a href="settings_avatar.html"><i class="i2"></i>我的头像</a>
+	            <a href="settings_sns.html"><i class="i3"></i>绑定设置</a>
+				<a href="settings_security.html"><i class="i4"></i>账号安全</a>
+	            <a href="settings_domain.html"><i class="i8"></i>我的窝设置</a>
+	            <a href="settings_blacklist.html"><i class="i9"></i>黑名单管理</a>
+       		 </div>
+       		 <div class="content">
+            <div class="hd">
+                <strong>收货地址</strong>
+                                <span>
+                    资料完善度
+                    <div class="progress">
+                        <div class="num">60%</div>
+                        <div style="width:60%" class="on"></div>
+                    </div>
+                </span>
+                            </div>
+                                                
+    <div class="userinfo">
+        <!--setMobile-->
+        <div class="set-mobile">
+            <form id="addForm">
+                <!--UserInfo-->
+                <dl class="clearfix">
+                    <dt>姓名：</dt>
+                    <dd><input type="text" value="" data-error="请填写姓名" id="usernameInput" class="checkEmpty" name="user_name"></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>所在地区：</dt>
+                    <dd id="locationSelect" class="item-list">
+                        <input type="hidden" value="0" name="address_id" id="addressId">
+                        <input type="hidden" value="" name="province" data-error="请选择省份" class="checkEmpty" id="provinceId">
+                        <input type="text" style="width:95px;" value="请选择" readonly="" data-type="province" id="provinceInput" class="selectBtn">
+                        <input type="hidden" value="" name="city" data-error="请选择城市" class="checkEmpty" id="cityId">
+                        <input type="text" style="width:145px; margin-left:10px;" value="请选择" readonly="" data-type="city" id="cityInput" class="selectBtn">
+                        <input type="hidden" value="" name="county" data-error="请选择地区" id="countyId">
+                        <input type="text" style="width:145px; margin-left:10px;" value="请选择" readonly="" data-type="county" id="countyInput" class="selectBtn">
+                        <i id="provinceSelect" data-type="province" class="citys selectBtn"></i>
+                        <i id="citySelect" data-type="city" class="dists selectBtn"></i>
+                        <i style="display:none;" id="countySelect" data-type="county" class="countys selectBtn"></i>
+                        <div id="provinceList" class="citys-li">
+                                                        <a data-pid="16522" data-type="province" class="selectLi" href="javascript:;">安徽省</a>
+                                                        <a data-pid="16228" data-type="province" class="selectLi" href="javascript:;">澳门特别行政区</a>
+                                                        <a data-pid="16646" data-type="province" class="selectLi" href="javascript:;">北京市</a>
+                                                        <a data-pid="15150" data-type="province" class="selectLi" href="javascript:;">重庆市</a>
+                                                        <a data-pid="16663" data-type="province" class="selectLi" href="javascript:;">福建省</a>
+                                                        <a data-pid="14333" data-type="province" class="selectLi" href="javascript:;">甘肃省</a>
+                                                        <a data-pid="15591" data-type="province" class="selectLi" href="javascript:;">广东省</a>
+                                                        <a data-pid="15025" data-type="province" class="selectLi" href="javascript:;">广西壮族自治区</a>
+                                                        <a data-pid="14898" data-type="province" class="selectLi" href="javascript:;">贵州省</a>
+                                                        <a data-pid="15426" data-type="province" class="selectLi" href="javascript:;">海南省</a>
+                                                        <a data-pid="16043" data-type="province" class="selectLi" href="javascript:;">河北省</a>
+                                                        <a data-pid="17133" data-type="province" class="selectLi" href="javascript:;">黑龙江省</a>
+                                                        <a data-pid="15868" data-type="province" class="selectLi" href="javascript:;">河南省</a>
+                                                        <a data-pid="15309" data-type="province" class="selectLi" href="javascript:;">湖北省</a>
+                                                        <a data-pid="15454" data-type="province" class="selectLi" href="javascript:;">湖南省</a>
+                                                        <a data-pid="16758" data-type="province" class="selectLi" href="javascript:;">江苏省</a>
+                                                        <a data-pid="16233" data-type="province" class="selectLi" href="javascript:;">江西省</a>
+                                                        <a data-pid="17265" data-type="province" class="selectLi" href="javascript:;">吉林省</a>
+                                                        <a data-pid="16998" data-type="province" class="selectLi" href="javascript:;">辽宁省</a>
+                                                        <a data-pid="14435" data-type="province" class="selectLi" href="javascript:;">内蒙古自治区</a>
+                                                        <a data-pid="14997" data-type="province" class="selectLi" href="javascript:;">宁夏回族自治区</a>
+                                                        <a data-pid="14280" data-type="province" class="selectLi" href="javascript:;">青海省</a>
+                                                        <a data-pid="16364" data-type="province" class="selectLi" href="javascript:;">山东省</a>
+                                                        <a data-pid="17114" data-type="province" class="selectLi" href="javascript:;">上海市</a>
+                                                        <a data-pid="15738" data-type="province" class="selectLi" href="javascript:;">山西省</a>
+                                                        <a data-pid="15191" data-type="province" class="selectLi" href="javascript:;">陕西省</a>
+                                                        <a data-pid="14549" data-type="province" class="selectLi" href="javascript:;">四川省</a>
+                                                        <a data-pid="21250" data-type="province" class="selectLi" href="javascript:;">台湾省</a>
+                                                        <a data-pid="16879" data-type="province" class="selectLi" href="javascript:;">天津市</a>
+                                                        <a data-pid="16345" data-type="province" class="selectLi" href="javascript:;">香港特别行政区</a>
+                                                        <a data-pid="14199" data-type="province" class="selectLi" href="javascript:;">西藏自治区</a>
+                                                        <a data-pid="14085" data-type="province" class="selectLi" href="javascript:;">新疆维吾尔自治区</a>
+                                                        <a data-pid="14752" data-type="province" class="selectLi" href="javascript:;">云南省</a>
+                                                        <a data-pid="16896" data-type="province" class="selectLi" href="javascript:;">浙江省</a>
+                                                    </div>
+                        <div id="cityList" class="dists-li"></div>
+                        <div id="countyList" class="countys-li"></div>
+                    </dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>详细地址：</dt>
+                    <dd><textarea data-error="请填写详细地址" class="checkEmpty" id="addressInput" name="address"></textarea></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>手机号码：</dt>
+                    <dd><input type="text" data-error="请填写手机号码" class="checkEmpty" value="" name="mobile" id="mobileInput"></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt>邮政编码：</dt>
+                    <dd><input type="text" data-error="请填写邮政编码" class="checkEmpty" value="" name="zipcode" id="zipcodeInput"></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dd class="set-first"><input type="hidden" value="0" name="is_default" id="is_default"><i id="setDefault" name="is_default" class="radio on"></i>设置为默认收货地址</dd>
+                </dl>
+            </form>
+            <dl class="clearfix">
+                <dd class="btn-sub"><a class="btn2" href="/setting/">取消</a><a id="saveBtn" class="btn1" href="javascript:;">保存</a></dd>
+            </dl>
+            <ul class="address">
+                <li class="title">已保存0条地址，还能保存10条</li>
+                <li>
+                            <div class="clearfix">
+                                <div class="dt">收货人：</div>
+                                <div class="dd">孟繁茂</div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="dt">详细地址：</div>
+                                <div class="dd">
+                                    <p>北京市 昌平区 </p>
+                                    <p>北京市昌平区中软实训大楼</p>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="dt">邮政编码：</div>
+                                <div class="dd">030001</div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="dt">手机号码：</div>
+                                <div class="dd">13935172327</div>
+                            </div>
+                                                            <div class="i-first">默认地址</div>
+                                                        <div class="btns">
+                                <a class="modifyThis" data-id="110175" href="javascript:;">修改</a> / <a class="delThis" data-id="110175" href="javascript:;">删除</a>
+                            </div>
+                        </li>
+                            </ul>
+            <!--UserInfoEnd-->
+        </div>
+        <!--setMobile end-->
+    </div>
+
+        </div>
+		</div>
+	</body>
+</html>
