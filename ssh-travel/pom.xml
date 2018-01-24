@@ -324,37 +324,7 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
-
-			<!-- start:clean jetty:run stop:直接点 红方块 -->
-			<plugin>
-
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>7.1.0.RC1</version>
-				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webAppConfig>
-						<contextPath>/travel</contextPath>
-					</webAppConfig>
-				</configuration>
-			</plugin>
-			<!-- start:clean install cargo:run stop:cargo:stop -->
-			<plugin>
-				<groupId>org.codehaus.cargo</groupId>
-				<artifactId>cargo-maven2-plugin</artifactId>
-				<version>1.4.9</version>
-				<configuration>
-					<container>
-						<containerId>tomcat7x</containerId>
-						<home>D:\All_WorkSpace\STS\apache-tomcat-7.0.56</home>
-					</container>
-					<configuration>
-						<type>standalone</type>
-						<home>${project.build.directory}/tomcat7x</home>
-						<!-- <properties> <cargo.servlet.port>8888</cargo.servlet.port> </properties> -->
-					</configuration>
-				</configuration>
-			</plugin>
 		</plugins>
+		<finalName>travel</finalName>
 	</build>
 </project>
