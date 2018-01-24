@@ -1,8 +1,8 @@
 package org.mfm.travel.dao;
 
-import org.mfm.basic.dao.IBaseDao;
 import org.mfm.travel.model.TravelRoute;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-interface ITravelRouteDao extends IBaseDao<TravelRoute> {
+interface ITravelRouteDao extends JpaRepository<TravelRoute, Integer> {
 
 }

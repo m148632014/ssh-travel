@@ -4,10 +4,10 @@ import org.mfm.travel.model.PublicUser;
 
 public interface IPublicUserService {
 
-	void add(PublicUser pu);
+    void add(PublicUser pu);
 
-	void update(PublicUser pu);
+    void update(PublicUser pu);
 
-	PublicUser loadByNickname(String nickname);
+    PublicUser loadByNickname(String nickname);
 
 }

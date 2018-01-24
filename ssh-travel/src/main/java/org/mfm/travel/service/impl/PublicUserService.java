@@ -8,22 +8,20 @@ import org.mfm.travel.service.IPublicUserService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PublicUserService implements IPublicUserService{
-	@Inject
-	private IPublicUserDao publicUserDao;
-	@Override
-	public void add(PublicUser pu) {
-		publicUserDao.add(pu);
-	}
-	
-	@Override
-	public void update(PublicUser pu) {
-		publicUserDao.update(pu);
-	}
+public class PublicUserService implements IPublicUserService {
 
-	@Override
-	public PublicUser loadByNickname(String nickname) {
-		return publicUserDao.loadByNickname(nickname);
-	}
+    @Override
+    public void add(PublicUser pu) {
 
+    }
+
+    @Override
+    public void update(PublicUser pu) {
+
+    }
+
+    @Override
+    public PublicUser loadByNickname(String nickname) {
+        return null;
+    }
 }

@@ -1,0 +1,487 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+    font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+}
+li{
+	list-style: none;
+}
+a {
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clearfix::after, .wrapper::after, .article::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+.wrapper {
+    margin: 15px auto 0;
+    width: 980px;
+}
+.focus {
+    height: 340px;
+    margin: 10px 0 15px;
+}
+.focus .slide {
+    float: right;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    width: 700px;
+}
+
+ .slide ul li {
+    float: left;
+    height: 340px;
+    overflow: hidden;
+    width: 700px;
+}
+ .slide ol {
+    bottom: 24px;
+    position: absolute;
+    right: 30px;
+}
+
+.slide ol li {
+    background: url(img/strategy/scroll_s.png) no-repeat scroll center 5px;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-left: 5px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 20px;
+}
+ .slide ol li.on{
+    background: url(img/strategy/scroll_b.png) no-repeat 0 0;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-left: 5px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 20px;
+}
+
+
+
+.gl_nav {
+    color: #666666;
+    line-height: 16px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+.gl_nav a {
+    color: #ffa801;
+    float: left;
+    font-size: 16px;
+}
+.gl_nav a:hover{
+ 	text-decoration: underline;
+}
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.gl_wrap {
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 5px;
+    overflow: hidden;
+    padding-bottom: 8px;
+    width: 980px;
+}
+
+.gl_wrap h3 {
+    color: #333;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 7px;
+}
+.gl_wrap h3 a{
+   color: #333;
+   font-weight: normal;
+   font-size: 14px;
+}
+.gl_wrap h3 a:hover{
+    color: #ffa801;
+    text-decoration: underline;
+}
+.gl_wrap ol {
+    display: inline;
+    float: left;
+    height: 28px;
+    margin-left: 8px;
+    overflow: hidden;
+    width: 790px;
+}
+
+.gl_wrap ol li {
+    display: inline;
+    float: left;
+    height: 22px;
+    margin-left: 5px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.gl_wrap ol li a {
+    color: #666;
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+}
+.gl_wrap ol li a:hover {
+   color: #fff;
+   background: #FFa800;
+}
+.gl_wrap span {
+    float: left;
+    height: 16px;
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 42px;
+}
+.gl_wrap span a {
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 42px;
+}
+.gl_wrap span a.more_selector{
+    background: rgba(0, 0, 0, 0) url(img/strategy/ms.png)  no-repeat scroll 0 0;
+}
+.gl_wrap span a.more_selector:hover{
+    background: rgba(0, 0, 0, 0) url(img/strategy/ms.png)  no-repeat scroll -43px 0;
+}
+.gl_wrap span a.sp_toggle {
+    background: rgba(0, 0, 0, 0) url(img/strategy/ms.png) no-repeat scroll 0 -17px;
+}
+.gl_wrap span a.sp_toggle:hover{
+    background: rgba(0, 0, 0, 0) url(img/strategy/ms.png) no-repeat scroll -43px -17px;
+}
+
+.p_upw {
+    margin-top: 30px;
+}
+
+.uptime_p {
+    float: left;
+    margin-top: 5px;
+}
+
+.uptime_p a {
+    color: #666;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 4px;
+}
+
+.uptime_p span {
+    color: #d8d8d8;
+    float: left;
+    padding: 0 12px;
+}
+
+.uptime_p a.upt_on {
+    border-bottom: 2px solid #ffa800;
+    color: #ffa800;
+}
+
+.uptime_p a {
+    color: #666;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 4px;
+}
+
+.mfw_de {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-radius: 30px;
+    float: right;
+    height: 28px;
+    padding: 0 28px;
+}
+
+.mfw_de p {
+    color: #666;
+    line-height: 28px;
+}
+
+.mfw_de p a {
+    background-color: transparent;
+    color: #ff9d00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mfw_de p span {
+    color: #ffa800;
+}
+
+
+.gonglve_wrap {
+    padding-bottom: 10px;
+}
+.gl_fw {
+    border-bottom: 1px dotted #e4e4e4;
+    margin-top: 25px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    width: 980px;
+}
+
+.gl_cw {
+    width: 1020px;
+}
+
+.gl_list {
+    float: left;
+    margin-right: 40px;
+    width: 130px;
+}
+
+.gl_list a {
+    display: block;
+    height: 184px;
+    overflow: hidden;
+    width: 130px;
+}
+
+.update_time {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.down_cout {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 30px;
+    height: 24px;
+    margin-top: 5px;
+    position: relative;
+    width: 130px;
+}
+
+.down_cout span {
+    background: rgba(0, 0, 0, 0) url(img/strategy/down_p.gif) no-repeat scroll 0 0;
+    display: block;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+
+.down_cout p {
+    color: #666;
+    line-height: 24px;
+    padding-left: 30px;
+}
+
+.show_more {
+    border-bottom: 1px dotted #e4e4e4;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.show_more a {
+    color: #ff8903;
+}
+
+/**show strategy**/
+.site_nav {
+    clear: both;
+    height: 30px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.site_nav .crumb {
+    color: #666;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.site_nav .crumb a {
+    color: #b5600d;
+    font-size: 12px;
+}
+
+.site_nav .crumb h1 {
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+}
+.mdd_img {
+    float: left;
+    height: 325px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 230px;
+}
+
+.middle_de {
+    display: inline;
+    float: left;
+    margin-left: 30px;
+    width: 512px;
+}
+
+.middle_de h1 {
+    color: #444444;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-top: 6px;
+}
+
+.gl_title {
+    margin-top: 8px;
+}
+
+.gl_title span {
+    color: #666;
+    float: left;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.jianjie {
+    background: #f3f3f3 none repeat scroll 0 0;
+    margin-top: 15px;
+    padding: 14px 0;
+    width: 512px;
+}
+
+.jianjie p {
+    color: #666;
+    line-height: 24px;
+    margin: 0 auto;
+    width: 468px;
+}
+
+.jianjie p strong {
+    color: #444444;
+}
+
+.th_f {
+    margin-top: 10px;
+}
+
+.th_f p {
+    color: #666;
+    line-height: 26px;
+}
+
+.feng_list {
+    margin-top: -5px;
+}
+
+.feng_list a {
+    border: 1px solid #bebebe;
+    float: left;
+    height: 18px;
+    margin-right: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 18px;
+}
+
+.down_glb {
+    float: right;
+    width: 170px;
+}
+
+.down_glb h2 {
+    color: #666;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 22px;
+    margin-top: 48px;
+}
+
+.down_glb h2 span {
+    font-size: 12px;
+}
+
+.down_p {
+    margin-top: 15px;
+}
+
+.down_p a {
+    background: #92bf48 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    width: 170px;
+}
+
+.down_p p {
+    color: #666;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.down_p1 {
+    margin-top: 20px;
+}
+
+.down_p1 a {
+    background: #54b4e6 none repeat scroll 0 0;
+}
+
+
+.up_time {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-radius: 30px;
+    height: 28px;
+    margin-top: 30px;
+    width: 170px;
+}
+
+.up_time p {
+    color: #666;
+    line-height: 28px;
+    text-align: center;
+}
+
+
+
+.box_wrap {
+    margin-top: 40px;
+    width: 980px;
+    margin-bottom: 30px;
+}
+.scroll_wrap {
+    height: 195px;
+    overflow: hidden;
+    position: relative;
+    width: 980px;
+    background: gold;
+}

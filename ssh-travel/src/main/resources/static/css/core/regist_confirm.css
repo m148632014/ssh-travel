@@ -1,0 +1,226 @@
+body {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+    font-size: 12px;
+}
+a {
+    color: #ffa800;
+    text-decoration: none;
+}
+input, select, textarea, button {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",STHeiti;
+}
+body, p, div {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+*, *:active, *:focus {
+    outline: 0 none;
+}
+.wrapper {
+    color: #666;
+    left: 50%;
+    margin: -245px 0 0 -490px;
+    position: absolute;
+    top: 50%;
+    width: 980px;
+    z-index: 2;
+}
+.container {
+    margin: -30px auto 0;
+    width: 370px;
+}
+
+.container a.logo {
+    background: rgba(0, 0, 0, 0) url(img/login/logo-new.png) no-repeat scroll 0 0;
+    display: block;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 75px;
+}
+
+.signup-forms {
+    position: relative;
+}
+
+.signup-forms .signup-box {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+
+.add-info {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 370px;
+}
+
+.add-info .hd {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 5px 5px 0 0;
+    color: #666;
+    font-size: 18px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 26px;
+    text-align: left;
+}
+
+#_j_signup_mobile_form, #_j_complete_form {
+    padding-top: 15px;
+    position: relative;
+}
+
+.add-info .m-t-10 {
+    margin-top: 10px;
+}
+
+.signup-forms .form-field input {
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #fff;
+    color: #666;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    outline: medium none;
+    padding: 6px 0 6px 12px;
+    transition: box-shadow 0.25s linear 0s;
+    width: 306px;
+}
+
+.signup-forms .form-field {
+    clear: both;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 320px;
+}
+.signup-forms .err-tip {
+    background: #fff url(img/login/err_ico2.png) no-repeat scroll 0 -60px;
+    clear: both;
+    color: #ff3c00;
+    display: none;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 0 3px 22px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 300px;
+}
+
+.signup-forms .vcode-send {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #fff, #f2f2f2) repeat scroll 0 0;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    color: #333;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+    width: 120px;
+}
+.signup-forms .vcode-send:hover{
+	background: #fff;
+	text-decoration: none;
+}
+.signup-forms .form-field input.vcode-input {
+    float: right;
+    width: 174px;
+}
+
+.signup-forms .submit-btn {
+    margin: 0 auto;
+    padding: 12px 0 0;
+    width: 320px;
+}
+
+.signup-forms .submit-btn button {
+    background-color: #ffa800;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    width: 320px;
+}
+.signup-forms .form-field input:focus {
+    border: 1px solid #ffa200;
+    box-shadow: 0 0 5px #ffa200;
+    outline: medium none;
+    transition: box-shadow 0.25s linear 0s;
+ }
+    
+.clearfix::after, .wrapper::after, .article::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+.clearfix, .wrapper, .article {
+}
+
+
+.photoby {
+    bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 2em;
+    position: absolute;
+    right: 10px;
+    z-index: 3;
+}
+
+.photoby a {
+    color: #fff;
+}
+.fullscreen-bg {
+    background-position: 50% 50%;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.fullscreen-bg img {
+    display: none;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.fullscreen-bg::before {
+    background: rgba(0, 0, 0, 0.2) url(img/login/full_page_vignette.png) repeat scroll 0 0 / 100% auto;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.fullscreen-bg::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

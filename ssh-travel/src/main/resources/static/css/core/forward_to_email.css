@@ -1,0 +1,185 @@
+body {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+    font-size: 12px;
+}
+a {
+    color: #ffa800;
+    text-decoration: none;
+}
+input, select, textarea, button {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",STHeiti;
+}
+body, p, div {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+*, *:active, *:focus {
+    outline: 0 none;
+}
+
+body {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+    font-size: 12px;
+}
+a {
+    color: #ffa800;
+    text-decoration: none;
+}
+input, select, textarea, button {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",STHeiti;
+}
+body, p, div {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+*, *:active, *:focus {
+    outline: 0 none;
+}
+.wrapper {
+    color: #666;
+    left: 50%;
+    margin: -245px 0 0 -490px;
+    position: absolute;
+    top: 50%;
+    width: 980px;
+    z-index: 2;
+}
+.container {
+    margin: -30px auto 0;
+    width: 370px;
+}
+
+.container a.logo {
+    background: rgba(0, 0, 0, 0) url(img/login/logo-new.png) no-repeat scroll 0 0;
+    display: block;
+    height: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 75px;
+}
+
+.signup-forms {
+    position: relative;
+}
+
+.signup-forms .signup-box {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+.ver-email {
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    width: 370px;
+}
+.ver-email .hd {
+    font-size: 16px;
+    line-height: 1.8em;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.ver-email .hd span {
+    color: #d62d00;
+    font-weight: 700;
+}
+
+.ver-email .btn-link {
+    background: #ffa800 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    width: 310px;
+}
+
+.ver-email .tips {
+    color: #999;
+    font-size: 12px;
+    line-height: 2.2em;
+    padding: 20px 0 35px;
+}
+
+.ver-email .tips .title {
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.ver-email .tips a {
+    color: #ffa800;
+    text-decoration: none;
+}
+
+ .ver-email .tips a:hover{
+    text-decoration: underline;
+}
+ 
+.clearfix::after, .wrapper::after, .article::after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+.clearfix, .wrapper, .article {
+}
+
+
+.photoby {
+    bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 2em;
+    position: absolute;
+    right: 10px;
+    z-index: 3;
+}
+
+.photoby a {
+    color: #fff;
+}
+.fullscreen-bg {
+    background-position: 50% 50%;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.fullscreen-bg img {
+    display: none;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.fullscreen-bg::before {
+    background: rgba(0, 0, 0, 0.2) url(img/login/full_page_vignette.png) repeat scroll 0 0 / 100% auto;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.fullscreen-bg::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

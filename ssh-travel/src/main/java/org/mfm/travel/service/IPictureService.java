@@ -7,8 +7,8 @@ import org.mfm.travel.model.Picture;
 
 
 public interface IPictureService {
-	void add(Picture picture,String pictype, InputStream inputStream) throws IOException;
+    void add(Picture picture, String pictype, InputStream inputStream) throws IOException;
 
-	Picture loadIndexPicByTravelNoteId(int id);
-	
+    Picture loadIndexPicByTravelNoteId(int id);
+
 }

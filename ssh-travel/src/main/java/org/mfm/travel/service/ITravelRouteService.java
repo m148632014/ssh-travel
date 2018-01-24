@@ -1,5 +1,5 @@
 package org.mfm.travel.service;
 
-public interface ITravelRouteService{
+public interface ITravelRouteService {
 
 }

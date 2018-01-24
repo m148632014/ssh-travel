@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///ssh_travel?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: travel
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  devtools:
+    restart:
+      enabled: true
+server:
+  context-path: /travel
+
+
+ICPRecord: 京ICP备11015476号
+ICPConfirm: 京ICP证110318号
+networskRecord: 京公网安备110105013401号
+networkConfirm: 新出网证(京)字242号
+copyright: © 2015 Mafengwo.cn
+contactPhone: 400 166 6866
+indexPicSize: 1680*634
+indexPicNumber: 5
+domainName: http://localhost:8080/travel/
+
+debug: false

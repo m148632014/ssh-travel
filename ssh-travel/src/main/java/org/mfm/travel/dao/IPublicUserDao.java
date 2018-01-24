@@ -1,10 +1,10 @@
 package org.mfm.travel.dao;
 
-import org.mfm.basic.dao.IBaseDao;
 import org.mfm.travel.model.PublicUser;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IPublicUserDao extends IBaseDao<PublicUser>{
+public interface IPublicUserDao extends JpaRepository<PublicUser, Integer> {
 
-	PublicUser loadByNickname(String nickname);
+//    PublicUser loadByNickname(String nickname);
 
 }

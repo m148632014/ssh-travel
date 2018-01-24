@@ -8,11 +8,11 @@ import org.mfm.travel.model.TravelNote;
 
 public interface ITravelNoteService {
 
-	void add(TravelNote travelNote, int uid,Note[] notes);
+    void add(TravelNote travelNote, int uid, Note[] notes);
 
-	List<TravelNote> listAll();
+    List<TravelNote> listAll();
 
-	void delete(int id);
+    void delete(int id);
 
 
 }

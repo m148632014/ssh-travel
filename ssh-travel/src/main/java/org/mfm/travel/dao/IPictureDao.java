@@ -1,9 +1,9 @@
 package org.mfm.travel.dao;
 
-import org.mfm.basic.dao.IBaseDao;
 import org.mfm.travel.model.Picture;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IPictureDao extends IBaseDao<Picture> {
+public interface IPictureDao extends JpaRepository<Picture, Integer> {
 
 
 }

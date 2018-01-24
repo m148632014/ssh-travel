@@ -1,0 +1,949 @@
+body {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti;
+    font-size: 12px;
+    color: #666;
+}
+a {
+    background-color: transparent;
+    color: #ff9d00;
+    cursor: pointer;
+    text-decoration: none;
+}
+input, select, textarea, button {
+    font-family: verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",STHeiti;
+}
+li{
+	list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+*, *:active, *:focus {
+    outline: 0 none;
+}
+ul, ol, li, dl, dd, dt {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+.cp_placeholder {
+    height: 81px;
+}
+
+.complete_percent {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #d7cbba;
+    line-height: 36px;
+    z-index: 20;
+}
+
+.cp_center {
+    height: 36px;
+    margin: 0 auto;
+    padding: 22px 0;
+    position: relative;
+    width: 980px;
+}
+
+.cp_center .cp_preview {
+    margin-left: 40px;
+}
+
+.btn_publish, .btn_preview {
+    overflow: hidden;
+}
+
+.btn_c, .btn_big {
+    background: #ffa800 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 25px;
+}
+.btn_big {
+    border-radius: 5px;
+    font-size: 18px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 28px;
+    text-align: center;
+}
+.flt2 {
+    float: right;
+}
+.store_draft {
+    color: #999;
+}
+
+.hide {
+    display: none;
+}
+
+.store_draft {
+    color: #999;
+}
+.draft_remain {
+    color: #ffa800;
+    font-size: 18px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+.store_draft .store_it {
+    color: #ff8a00;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.cp_detail .cp_name {
+    font-size: 18px;
+}
+
+.cp_num {
+    display: inline;
+    margin: 0 15px;
+}
+
+.cp_num i {
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin: 0 1px;
+    transform-origin: 50% 50% 0;
+    width: 10px;
+}
+.cp_num i.completed {
+    background-color: #add75c;
+}
+
+.cp_num i.on {
+    background-color: #add75c;
+    margin: 0 6px;
+    transform: scale(2);
+}
+.cp_num strong {
+    color: #999;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 8px;
+    vertical-align: -2px;
+}
+.set_index {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/page_bg.jpg) no-repeat scroll center 0 / cover ;
+    height: 480px;
+    position: relative;
+}
+
+.set_bg {
+    background-size: cover;
+}
+.set_bg, .set_map {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    height: 480px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.fully_loading {
+    display: none;
+}
+.fully_loading {
+    left: 50%;
+    margin-left: -175px;
+    position: absolute;
+    text-align: center;
+    top: 160px;
+    width: 350px;
+}
+
+.fully_loading p {
+    color: #aaa;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.set_page {
+    display: block;
+}
+.set_page {
+    height: 67px;
+    margin: 0 auto;
+    padding: 200px 0 0 275px;
+    position: relative;
+    width: 705px;
+}
+
+.set_page a.set_add {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -10px 0;
+    float: left;
+    height: 67px;
+    margin-right: 20px;
+    position: relative;
+    width: 67px;
+}
+
+.set_title {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    bottom: 25px;
+    box-shadow: 0 2px 2px rgba(110, 98, 85, 0.5);
+    height: 20px;
+    left: 50%;
+    line-height: 20px;
+    margin-left: -489px;
+    padding: 20px;
+    position: absolute;
+    transition: all 0.2s linear 0s;
+    width: 938px;
+    z-index: 1;
+}
+
+.set_title input {
+    border: 0 none;
+    color: #666;
+    float: left;
+    font-size: 18px;
+    height: 20px;
+    line-height: 22px;
+    width: 868px;
+}
+
+.set_title span {
+    color: #999;
+    display: none;
+    float: right;
+}
+
+.set_title span strong {
+    color: #f00;
+    font-weight: normal;
+}
+
+.set_title.on {
+    border-color: #ffc65a;
+    box-shadow: 0 0 3px rgba(255, 198, 90, 1);
+}
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.set_page h2 {
+    margin-top: 2px;
+}
+.set_page h2, .set_page h2 a {
+    font-size: 24px;
+    font-weight: normal;
+}
+.set_page p {
+	color: #333;
+    font-size: 16px;
+    margin-top: 12px;
+}
+.set_title.on span {
+    display: inline;
+}
+
+.set_drag {
+    display: none;
+}
+.set_drag {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+    font-size: 18px;
+    height: 40px;
+    left: 50%;
+    line-height: 40px;
+    margin: 0 0 0 -115px;
+    overflow: hidden;
+    position: absolute;
+    top: 220px;
+    width: 230px;
+}
+
+.set_drag i {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -151px -422px;
+    float: left;
+    height: 22px;
+    margin: 9px 10px 0 20px;
+    width: 18px;
+}
+
+.main .toppic_uploading {
+    display: none;
+}
+.loading, .loading_video {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+    left: 50%;
+    margin-left: -293px;
+    padding: 18px 18px 15px;
+    position: absolute;
+    top: 180px;
+    width: 550px;
+}
+
+.loading h3, .loading_video h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.loading_bar {
+    background: #e2e2e2 none repeat scroll 0 0;
+    border-radius: 15px;
+    float: left;
+    height: 18px;
+    width: 480px;
+}
+.loading_bar span {
+    background: #add75c none repeat scroll 0 0;
+    border-radius: 15px;
+    display: inline-block;
+    height: 100%;
+    width: 0;
+}
+
+.set_btn {
+    display: block;
+}
+
+.set_btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 95px;
+    left: 50%;
+    margin-left: -489px;
+    overflow: hidden;
+    position: absolute;
+    width: 162px;
+    z-index: 11;
+}
+
+.set_btn a:hover, .set_btn a.on, .set_btn a.a_set, .set_btn li:hover .a_add {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    color: #ff8a00;
+    text-decoration: none;
+}
+
+.set_btn a i {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -83px -630px;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin: 7px 10px 0 13px;
+    vertical-align: -2px;
+    width: 20px;
+}
+
+.set_btn a:hover, .set_btn a.on, .set_btn a.a_set, .set_btn li:hover .a_add {
+    color: #ff8a00;
+}
+
+.set_btn ul {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    left: 0;
+    padding: 0 0 5px;
+    position: absolute;
+    top: 34px;
+    transition: all 0.2s ease-in-out 0s;
+    z-index: 10;
+}
+
+.set_btn li {
+    padding-bottom: 5px;
+    position: relative;
+}
+.set_btn a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    width: 162px;
+}
+
+.set_btn a i {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -83px -630px;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin: 7px 10px 0 13px;
+    vertical-align: -2px;
+    width: 20px;
+}
+
+.set_btn a.a_change i {
+    background-position: -108px -608px;
+}
+
+.set_btn a.a_add i {
+    background-position: -131px -607px;
+}
+
+.add_button_show .edit_object {
+    background-color: #fff;
+    display: block;
+    left: 48px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.edit_object {
+    display: none;
+    height: 28px;
+    position: relative;
+}
+
+
+
+/****/
+
+.add {
+    margin: 40px auto 20px;
+    position: relative;
+    width: 980px;
+}
+
+.add_list {
+    font-size: 14px;
+    line-height: 25px;
+    width: 680px;
+}
+
+.add_button {
+    margin: 20px 0;
+    position: relative;
+    width: 600px;
+}
+
+.add_button_show .add_ico {
+    transform: rotate(45deg);
+}
+.add_ico {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -120px 0;
+    display: inline-block;
+    height: 28px;
+    transition: -moz-transform 0.6s ease-in-out 0s;
+    width: 28px;
+}
+.add_ico:hover{
+	cursor: pointer;
+	background-position: -120px -29px;
+}
+.add_ico_show{
+	 transform: rotate(45deg);
+}
+.edit_object{
+	width: 528px;
+	height: 28px;
+	float: left;
+}
+.edit_object ul{
+	width: 528px;
+	height: 28px;
+	float: left;
+}
+.edit_object ul li{
+	width: 132px;
+	height: 28px;
+	float: left;
+}
+.edit_object ul li a{
+	width: 132px;
+	height: 28px;
+	line-height: 28px;
+	display: block;
+	float: left;
+}
+.edit_object li a i {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 8px;
+	float: left;
+	display: block;
+}
+.edit_object ul li:hover span{
+	color: #F1832A;
+	cursor: pointer;
+}
+ .edit_object li a span {
+	color: #666;
+    font-size: 16px;
+} 
+.eo_word a i{
+	background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat -207px -29px;
+}
+.eo_word:hover a i{
+	background-position:-207px 0;
+}
+.eo_pic a i{
+	background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat -178px -29px;
+}
+.eo_pic:hover a i{
+	background-position: -178px 0;
+}
+.eo_video a i{
+	background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat -236px -29px;
+}
+.eo_video:hover a i{
+	background-position: -236px 0;
+}
+.eo_title a i{
+	background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat -265px -29px;
+}
+.eo_title:hover a i{
+	background-position: -265px 0;
+	
+}
+.eo_title .eo_title_tips {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -121px -59px;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    left: 575px;
+    top:4px;
+    width: 20px;
+}
+.title_tips {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    left: 0;
+    line-height: 25px;
+    padding: 25px 40px;
+    position: absolute;
+    right: -80px;
+    top: 38px;
+    z-index: 11;
+}
+.title_tips dt {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.title_tips dd {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.title_tips dd p{
+	font-size: 14px;
+	color: #666;	
+}
+.title_tips dt {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.title_tips img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+.add_word_v2 {
+    background-color: #fff;
+    margin-bottom: 18px;
+    width: 920px;
+}
+
+
+.add_article {
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    width: 100%;
+}
+
+.add_article > a.save, .add_article a.cancel {
+    background: #ffa800 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 0;
+    margin-top: 25px;
+    padding: 0 25px;
+    width: auto;
+}
+.add_article > a.save:hover{
+	color: #fff;
+	background: #ff8a00;
+	cursor: pointer;
+}
+.add_article > a.cancel:hover{
+	color: #666;
+	background: #;
+	cursor: pointer;
+}
+.add_article a.cancel {
+    background-color: #fff;
+    color: #999;
+    margin-right: 10px;
+}
+
+.add_word {
+	display: block;
+	float: left;
+    background-color: #fff;
+    margin-bottom: 18px;
+    width: 600px;
+}
+
+.add_word a.edit_again {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/sprite_v31.png) no-repeat scroll -198px -427px;
+    display: inline-block;
+    height: 20px;
+    line-height: 200px;
+    margin-left: 5px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 23px;
+}
+.add_word p {
+    cursor: text;
+    font-size: 14px;
+    line-height: 25px;
+    float: left;
+}
+
+
+.add_music {
+    margin-top: 160px;
+    padding: 25px 0 60px;
+    position: relative;
+    width: 680px;
+}
+
+.add_music .add_info {
+    padding-left: 0;
+}
+
+.add_music .add_info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.add_mp3 {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    height: 26px;
+    padding: 9px 9px 9px 15px;
+    position: relative;
+}
+
+.add_mp3 input.m_text {
+    border: 1px solid #d6d6d6;
+    color: #666;
+    display: none;
+    height: 17px;
+    line-height: 17px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    width: 120px;
+}
+
+.add_mp3 .m_showname {
+    height: 26px;
+    max-width: 320px;
+    overflow: hidden;
+}
+.add_mp3 span, .add_mp3 a {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.add_mp3 span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 9px;
+}
+
+.add_mp3 a {
+    font-size: 14px;
+}
+.add_mp3 span, .add_mp3 a {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.m_modify {
+    display: none;
+}
+.m_delete {
+    display: none;
+}
+.m_save {
+    display: none;
+}
+.m_cancel {
+    display: none;
+}
+
+.add_mp3 input.m_up {
+    background: #efefef none repeat scroll 0 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #999;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 56px;
+    z-index: 1;
+}
+.add_mp3 input.m_up:hover {
+    background: #ffc65a none repeat scroll 0 0;
+    border-color: #ffc65a;
+    color: #fff;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+.add .draft_con {
+    padding-right: 300px;
+    width: 680px;
+}
+.draft_con {
+    margin: 0 auto;
+    width: 980px;
+}
+
+.add .draft_btn {
+    padding-right: 0;
+}
+
+.draft_btn {
+    float: right;
+    padding-right: 10px;
+}
+.add .draft_btn .btn_white {
+    background: #eee none repeat scroll 0 0;
+}
+.draft_btn .btn_white {
+    background: #fff none repeat scroll 0 0;
+    color: #666;
+    margin-right: 15px;
+}
+
+.draft_remain {
+    color: #ffa800;
+    font-size: 18px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.draft_auto {
+    color: #999;
+    display: none;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.draft_auto strong {
+    font-weight: normal;
+}
+
+
+/**
+ * addword
+ */
+.add_word_v2 {
+    background-color: #fff;
+    margin-bottom: 18px;
+    width: 920px;
+}
+.add_word_v2 textarea {
+    overflow: hidden;
+}
+.add_word textarea {
+    overflow: hidden;
+}
+.add_word textarea {
+    border: 1px solid #fff;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 208px;
+    outline: 0 none;
+    padding: 10px;
+    resize: none;
+    width: 898px;
+}
+.add_word_v2 textarea {
+    border: 1px solid #fff;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 208px;
+    outline: 0 none;
+    padding: 10px;
+    resize: none;
+    width: 898px;
+}
+.add_word_v2 textarea.flash {
+    animation: 2s ease 0s normal none 1 running flash;
+}
+.add_word textarea.flash {
+    animation: 2s ease 0s normal none 1 running flash;
+}
+.add_article > a.save, .add_article a.cancel {
+    background: #ffa800 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 0;
+    margin-top: 25px;
+    padding: 0 25px;
+    width: auto;
+}
+
+.add_article > a.save, .add_article a.cancel {
+    background: #ffa800 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 0;
+    margin-top: 25px;
+    padding: 0 25px;
+    width: auto;
+}
+.add_article a.cancel {
+    background-color: #fff;
+    color: #999;
+    margin-right: 10px;
+}
+.article a.cancel:hover {
+    background-color: #ddd;
+    color: #666;
+    text-decoration: none;
+}
+
+
+.add_word {
+    background-color: #fff;
+    margin-bottom: 18px;
+    width: 600px;
+}
+.add_word p {
+    cursor: text;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.add a.edit_again {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/sprite_v31.png) no-repeat scroll -198px -427px;
+    display: inline-block;
+    height: 20px;
+    line-height: 200px;
+    margin-left: 5px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 23px;
+}
+.add a.edit_again{
+	transition: background 0.3s ease-in-out 0s;
+}
+.ap_dl .ap_thumb li a i, .add a.edit_again, .art_title > a, .tl_con dd i, .pull_list li a i, .float-bar .login_other a.btn, .ap_first a i {
+    transition: background 0.3s ease-in-out 0s;
+}
+
+/**
+ * titile
+ * 
+ */
+
+.article_title {
+    margin: 20px 0;
+    position: relative;
+}
+
+.article_title h2.t5 {
+    background-image: url(img/travelnote/t5.gif);
+}
+.article_title h2 {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/t1.gif) no-repeat scroll 0 0;
+    color: #444;
+    font-size: 22px;
+    font-weight: normal;
+    height: 86px;
+    overflow: hidden;
+}
+
+.article_title h2.t5 span {
+    margin-left: 68px;
+}
+.article_title h2 span {
+    display: block;
+    line-height: 95px;
+}
+
+.article_title .handle {
+    line-height: 16px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.handle a {
+    background: rgba(0, 0, 0, 0) url(img/travelnote/nn_sprite_v16.png) no-repeat scroll -306px -134px;
+    display: inline-block;
+    height: 16px;
+    line-height: 200px;
+    overflow: hidden;
+    width: 24px;
+}
+.handle a:hover {
+    background-position: -331px -134px;
+}
+.handle .delete {
+    background-position: -358px -134px;
+    margin-left: 10px;
+    width: 16px;
+}
+.handle .delete:hover {
+    background-position: -373px -134px;
+}
+
